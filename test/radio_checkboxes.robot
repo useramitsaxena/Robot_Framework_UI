@@ -21,7 +21,13 @@ LoginTest
 *** Keywords ***
 LoginIntoApplication
     Maximize Browser Window
-    click element  xpath://a[text()='Create New Account']
+    #click element  xpath://a[text()='Create New Account']
+    ${"email_id"}  Set Variable  xpath://input[@name='email']
+#    sleep  30s
+    input text  ${"email_id"}  amitsaxena09.1992@gmail.com
+    input text  xpath://input[@name='email']  amitsaxena09.1992@gmail.com
+    input text  xpath://input[@name='pass']  bssaxena
+    Log to console  AMIT DONE IT
     #close all browsers
 
 
