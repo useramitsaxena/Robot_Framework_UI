@@ -1,54 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.8.3 on darwin)" generated="20220502 13:19:59.531" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.8.3 on darwin)" generated="20220502 20:26:04.352" rpa="false" schemaversion="3">
 <suite id="s1" name="Radio Checkboxes" source="/Users/amit.saxena/PycharmProjects/RobotFramework/Robot_Framework_UI/test/radio_checkboxes.robot">
 <test id="s1-t1" name="LoginTest" line="12">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220502 13:19:59.717" level="INFO">Opening browser 'Safari' to base url 'https://www.facebook.com/'.</msg>
-<status status="PASS" starttime="20220502 13:19:59.717" endtime="20220502 13:20:02.848"/>
+<msg timestamp="20220502 20:26:04.617" level="INFO">Opening browser 'Safari' to base url 'https://www.facebook.com/'.</msg>
+<status status="PASS" starttime="20220502 20:26:04.617" endtime="20220502 20:26:13.442"/>
 </kw>
 <kw name="LoginIntoApplication">
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220502 13:20:02.850" endtime="20220502 13:20:02.892"/>
+<status status="PASS" starttime="20220502 20:26:13.445" endtime="20220502 20:26:13.495"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>xpath://a[text()='Create New Account']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220502 13:20:02.893" level="INFO">Clicking element 'xpath://a[text()='Create New Account']'.</msg>
-<status status="PASS" starttime="20220502 13:20:02.892" endtime="20220502 13:20:03.047"/>
-</kw>
-<kw name="Close All Browsers" library="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20220502 13:20:03.047" endtime="20220502 13:20:03.335"/>
+<msg timestamp="20220502 20:26:13.497" level="INFO">Clicking element 'xpath://a[text()='Create New Account']'.</msg>
+<status status="PASS" starttime="20220502 20:26:13.496" endtime="20220502 20:26:13.829"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>10 seconds</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220502 13:20:03.336" endtime="20220502 13:20:03.337"/>
+<status status="PASS" starttime="20220502 20:26:13.829" endtime="20220502 20:26:13.835"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220502 13:20:03.337" endtime="20220502 13:20:03.338"/>
+<status status="PASS" starttime="20220502 20:26:13.835" endtime="20220502 20:26:13.933"/>
 </kw>
-<status status="PASS" starttime="20220502 13:20:02.849" endtime="20220502 13:20:03.338"/>
+<status status="PASS" starttime="20220502 20:26:13.443" endtime="20220502 20:26:13.933"/>
 </kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${browser}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220502 13:20:03.339" level="INFO">Opening browser 'Safari' to base url 'https://www.facebook.com/'.</msg>
-<status status="PASS" starttime="20220502 13:20:03.339" endtime="20220502 13:20:05.592"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220502 13:20:05.592" endtime="20220502 13:20:05.847"/>
-</kw>
-<status status="PASS" starttime="20220502 13:19:59.716" endtime="20220502 13:20:05.847"/>
+<status status="PASS" starttime="20220502 20:26:04.616" endtime="20220502 20:26:13.934"/>
 </test>
-<status status="PASS" starttime="20220502 13:19:59.533" endtime="20220502 13:20:05.849"/>
+<status status="PASS" starttime="20220502 20:26:04.354" endtime="20220502 20:26:13.937"/>
 </suite>
 <statistics>
 <total>

@@ -15,14 +15,14 @@ LoginTest
     #create webdriver    Safari
     open browser    ${url}   ${browser}
     LoginIntoApplication
-    open browser    ${url}   ${browser}
-    close browser
+    #open browser    ${url}   ${browser}
+    #close browser
 
 *** Keywords ***
 LoginIntoApplication
     Maximize Browser Window
     click element  xpath://a[text()='Create New Account']
-    close all browsers
+    #close all browsers
 
 
 #    switch window  MAIN
