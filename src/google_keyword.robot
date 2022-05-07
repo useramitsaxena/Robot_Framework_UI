@@ -1,13 +1,10 @@
 *** Settings ***
-Documentation    Suite description
+Library    SeleniumLibrary
 
-*** Test Cases ***
-Test title
-    [Tags]    DEBUG
-    Provided precondition
-    When action
-    Then check expectations
+*** Variables ***
 
-*** Keywords ***
-Provided precondition
-    Setup system under test
+${input_text}  //*[@class="YacQv gsfi"]//following :: input[1]
+${google_click-btn}  //*[@class="FPdoLc lJ9FBc"]//following :: input[@class="gNO89b"]
+${click_google_img}  //*[@class="lnXdpd"]
+${search_btn_icon}  //*[@class='QCzoEc z1asCe MZy1Rb']
+
