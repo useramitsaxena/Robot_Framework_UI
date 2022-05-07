@@ -1,66 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.8.3 on darwin)" generated="20220502 20:30:57.539" rpa="false" schemaversion="3">
-<suite id="s1" name="Radio Checkboxes" source="/Users/amit.saxena/PycharmProjects/RobotFramework/Robot_Framework_UI/test/radio_checkboxes.robot">
-<test id="s1-t1" name="LoginTest" line="12">
+<robot generator="Robot 5.0 (Python 3.8.3 on darwin)" generated="20220508 00:45:12.306" rpa="false" schemaversion="3">
+<suite id="s1" name="Test Case 01 variables keyword" source="/Users/amit.saxena/PycharmProjects/RobotFramework/Robot_Framework_UI/test/Test_Case_01_variables_keyword.robot">
+<test id="s1-t1" name="Google" line="16">
+<kw name="Launch Brower and enter google url and closer Browser">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
+<arg>${google_url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220502 20:30:57.802" level="INFO">Opening browser 'Safari' to base url 'https://www.facebook.com/'.</msg>
-<status status="PASS" starttime="20220502 20:30:57.801" endtime="20220502 20:31:00.682"/>
+<msg timestamp="20220508 00:45:12.495" level="INFO">Opening browser 'Safari' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20220508 00:45:12.494" endtime="20220508 00:45:16.089"/>
 </kw>
-<kw name="LoginIntoApplication">
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220502 20:31:00.684" endtime="20220502 20:31:00.710"/>
+<status status="PASS" starttime="20220508 00:45:16.089" endtime="20220508 00:45:16.190"/>
 </kw>
-<kw name="Set Variable" library="BuiltIn">
-<var>${"email_id"}</var>
-<arg>xpath://input[@name='email']</arg>
-<doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20220502 20:31:00.711" level="INFO">${"email_id"} = xpath://input[@name='email']</msg>
-<status status="PASS" starttime="20220502 20:31:00.710" endtime="20220502 20:31:00.711"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220508 00:45:17.193" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220508 00:45:16.191" endtime="20220508 00:45:17.193"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>${"email_id"}</arg>
-<arg>amitsaxena09.1992@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220502 20:31:00.712" level="INFO">Typing text 'amitsaxena09.1992@gmail.com' into text field 'xpath://input[@name='email']'.</msg>
-<status status="PASS" starttime="20220502 20:31:00.711" endtime="20220502 20:31:00.957"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://input[@name='email']</arg>
-<arg>amitsaxena09.1992@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220502 20:31:00.957" level="INFO">Typing text 'amitsaxena09.1992@gmail.com' into text field 'xpath://input[@name='email']'.</msg>
-<status status="PASS" starttime="20220502 20:31:00.957" endtime="20220502 20:31:01.222"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://input[@name='pass']</arg>
-<arg>bssaxena</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220502 20:31:01.223" level="INFO">Typing text 'bssaxena' into text field 'xpath://input[@name='pass']'.</msg>
-<status status="PASS" starttime="20220502 20:31:01.222" endtime="20220502 20:31:01.351"/>
+<kw name="Get Browser Ids" library="SeleniumLibrary">
+<var>${get_browser_ids}</var>
+<doc>Returns index of all active browser as list.</doc>
+<msg timestamp="20220508 00:45:17.194" level="INFO">${get_browser_ids} = [1]</msg>
+<status status="PASS" starttime="20220508 00:45:17.194" endtime="20220508 00:45:17.195"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
-<arg>AMIT DONE IT</arg>
+<arg>${get_browser_ids}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220502 20:31:01.351" endtime="20220502 20:31:01.352"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<arg>10 seconds</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220502 20:31:01.352" endtime="20220502 20:31:01.354"/>
+<status status="PASS" starttime="20220508 00:45:17.195" endtime="20220508 00:45:17.196"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220502 20:31:01.354" endtime="20220502 20:31:01.588"/>
+<status status="PASS" starttime="20220508 00:45:17.196" endtime="20220508 00:45:17.954"/>
 </kw>
-<status status="PASS" starttime="20220502 20:31:00.683" endtime="20220502 20:31:01.588"/>
+<status status="PASS" starttime="20220508 00:45:12.494" endtime="20220508 00:45:17.954"/>
 </kw>
-<status status="PASS" starttime="20220502 20:30:57.800" endtime="20220502 20:31:01.589"/>
+<status status="PASS" starttime="20220508 00:45:12.493" endtime="20220508 00:45:17.955"/>
 </test>
-<status status="PASS" starttime="20220502 20:30:57.540" endtime="20220502 20:31:01.589"/>
+<status status="PASS" starttime="20220508 00:45:12.309" endtime="20220508 00:45:17.956"/>
 </suite>
 <statistics>
 <total>
@@ -69,7 +48,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Radio Checkboxes">Radio Checkboxes</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test Case 01 variables keyword">Test Case 01 variables keyword</stat>
 </suite>
 </statistics>
 <errors>
